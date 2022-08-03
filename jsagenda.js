@@ -1,4 +1,4 @@
-
+senhanova = "senha"
 var constlogin = [
     'teste@1',
     'teste@2',
@@ -7,7 +7,17 @@ var constlogin = [
 
 const constsenha = {
     'teste@1'(y) {
-        if (y == "senha") {
+        if (y == "senha1") {
+            valid = 1
+        }
+    },
+    'teste@3'(y) {
+        if (y == "senha2") {
+            valid = 1
+        }
+    },
+    'teste@3'(y) {
+        if (y == "senha3") {
             valid = 1
         }
     },
@@ -18,16 +28,9 @@ const constsenha = {
 
 function registrar() {
     
-
-    senhanova = senhanova.toString()
-
-    var contanova = function (y) {
-        if (y == senhanova) {
-            alert("doidera")
-            valid = 1
-        }
-    }
-    constsenha['teste@2'] = contanova(js_senha)
+    location.replace("homepage/index.html")
+    alert("uai")
+    
 }
 
 function logar() {
