@@ -2,7 +2,8 @@ senhanova = "senha"
 var constlogin = [
     'teste@1',
     'teste@2',
-    'teste@3'
+    'teste@3',
+    'teste@4'
 ]
 
 const constsenha = {
@@ -27,7 +28,16 @@ const constsenha = {
 
 
 function registrar() {
-    
+
+    senhanova = senhanova.toString()
+
+    const contanova = function (y) {
+        if (y == senhanova) {
+            alert("doidera")
+            valid = 1
+        }
+    }
+    constsenha['teste@4'] = contanova(js_senha)
     location.replace("homepage/index.html")
     alert("uai")
     
