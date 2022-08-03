@@ -1,3 +1,4 @@
+
 var constlogin = [
     'teste@1',
     'teste@2',
@@ -16,7 +17,7 @@ const constsenha = {
 
 
 function registrar() {
-    senhanova = prompt("insira")
+    
 
     senhanova = senhanova.toString()
 
