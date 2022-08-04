@@ -1,4 +1,3 @@
-senhanova = "senha"
 var constlogin = [
     'teste@1',
     'teste@2',
@@ -6,58 +5,32 @@ var constlogin = [
     'teste@4'
 ]
 
-const constsenha = {
-    'teste@1'(y) {
-        if (y == "senha1") {
-            valid = 1
-        }
-    },
-    'teste@3'(y) {
-        if (y == "senha2") {
-            valid = 1
-        }
-    },
-    'teste@3'(y) {
-        if (y == "senha3") {
-            valid = 1
-        }
-    },
-}
-
-
-
+const constsenha = [
+    'senha1',
+    'senha2',
+    'senha3',
+    'senha4'
+]
 
 function registrar() {
+    emailnovo = prompt("insira o email")
+    senhanova = prompt("insira a senha")
 
-    senhanova = senhanova.toString()
+    
 
-    const contanova = function (y) {
-        if (y == senhanova) {
-            alert("doidera")
-            valid = 1
-        }
-    }
-    constsenha['teste@4'] = contanova(js_senha)
-    location.replace("homepage/index.html")
-    alert("uai")
+    constlogin.push(emailnovo)
+    constsenha.push(senhanova)
+
     
 }
 
 function logar() {
     js_login = document.getElementById('login').value
     js_senha = document.getElementById('senha').value
-    const teste = constsenha[js_login]
-    teste(js_senha)
-    if (-1 !== constlogin.indexOf(js_login)) {
-        switch (valid) {
-            case 1:
-                alert("deu")
-                break;
-
-            default:
-                alert("senha incorreta inserida")
-                break;
-        }
-
+    alert (constlogin.indexOf(js_login))
+    alert (constsenha.indexOf(js_senha))
+    console.log(constsenha)
+    if (constlogin.indexOf(js_login)==constsenha.indexOf(js_senha) && constlogin.indexOf(js_login) != -1 && constsenha.indexOf(js_senha) != -1){
+        alert ("deu")
     }
 }
