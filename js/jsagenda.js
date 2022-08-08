@@ -5,7 +5,7 @@ var constlogin = [
     'teste@4'
 ]
 
-const constsenha = [
+var constsenha = [
     'senha1',
     'senha2',
     'senha3',
@@ -22,6 +22,8 @@ function registrar() {
     constsenha.push(senhanova)
 
     
+
+    
 }
 
 function logar() {
@@ -29,6 +31,8 @@ function logar() {
     js_senha = document.getElementById('senha').value
     alert (constlogin.indexOf(js_login))
     alert (constsenha.indexOf(js_senha))
+    alert (constlogin)
+    alert (constsenha)
     console.log(constsenha)
     if (constlogin.indexOf(js_login)==constsenha.indexOf(js_senha) && constlogin.indexOf(js_login) != -1 && constsenha.indexOf(js_senha) != -1){
         alert ("deu")
